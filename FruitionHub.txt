@@ -1,4 +1,5 @@
 -- Made By Ultimzema
+
 -- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
@@ -105,7 +106,7 @@ TextLabel_2.BackgroundTransparency = 0.900
 TextLabel_2.Position = UDim2.new(0.52549082, 0, 0, 0)
 TextLabel_2.Size = UDim2.new(0, 189, 0, 41)
 TextLabel_2.Font = Enum.Font.SourceSans
-TextLabel_2.Text = "v1.0"
+TextLabel_2.Text = "v1.0.1"
 TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_2.TextScaled = true
 TextLabel_2.TextSize = 14.000
@@ -186,7 +187,7 @@ PSXButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 PSXButton.TextScaled = true
 PSXButton.TextSize = 14.000
 PSXButton.TextWrapped = true
-MM2Button.MouseButton1Down:connect(function()
+PSXButton.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://system-exodus.com/scripts/PetSimulator/PetSimulatorX.lua", true))()
 end)
 
@@ -340,7 +341,6 @@ infyButton.TextWrapped = true
 infyButton.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
-
 
 FantomHubButton.Name = "FantomHubButton"
 FantomHubButton.Parent = ScriptScrollingFrame
@@ -525,29 +525,29 @@ ScriptTextButton.TextWrapped = true
 
 -- Scripts:
 
-local function TTAG_fake_script() -- CreditTextButton.creditopen 
+local function GILYDIT_fake_script() -- CreditTextButton.creditopen 
 	local script = Instance.new('LocalScript', CreditTextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.GameScrollingFrame.Visible = false
 		script.Parent.Parent.Parent.CreditFrame.Visible = true
-		script.Parent.Parent.Parent.ScriptScrollingFrame = false
+		script.Parent.Parent.Parent.ScriptScrollingFrame.Visible = false
 	end)
 	
 end
-coroutine.wrap(TTAG_fake_script)()
-local function CAIRV_fake_script() -- GameTextButton.gameopen 
+coroutine.wrap(GILYDIT_fake_script)()
+local function AZULV_fake_script() -- GameTextButton.gameopen 
 	local script = Instance.new('LocalScript', GameTextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.GameScrollingFrame.Visible = true
 		script.Parent.Parent.Parent.CreditFrame.Visible = false
-		script.Parent.Parent.Parent.ScriptScrollingFrame = false
+		script.Parent.Parent.Parent.ScriptScrollingFrame.Visible = false
 	end)
 	
 end
-coroutine.wrap(CAIRV_fake_script)()
-local function GTCZHNZ_fake_script() -- ScriptTextButton.scriptopen 
+coroutine.wrap(AZULV_fake_script)()
+local function YFNCYGZ_fake_script() -- ScriptTextButton.scriptopen 
 	local script = Instance.new('LocalScript', ScriptTextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -557,4 +557,4 @@ local function GTCZHNZ_fake_script() -- ScriptTextButton.scriptopen
 	end)
 	
 end
-coroutine.wrap(GTCZHNZ_fake_script)()
+coroutine.wrap(YFNCYGZ_fake_script)()
