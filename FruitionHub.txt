@@ -1,4 +1,4 @@
--- Made By Ultimzema
+-- Made by Ultimzema
 
 -- Instances:
 
@@ -11,26 +11,33 @@ local TextLabel = Instance.new("TextLabel")
 local TextLabel_2 = Instance.new("TextLabel")
 local InvisFrame = Instance.new("Frame")
 local GameScrollingFrame = Instance.new("ScrollingFrame")
-local BreakingPointButton = Instance.new("TextButton")
 local BSSButton = Instance.new("TextButton")
 local MM2Button = Instance.new("TextButton")
 local PSXButton = Instance.new("TextButton")
 local StrongmanSimulatorButton = Instance.new("TextButton")
 local PrisonLifeButton = Instance.new("TextButton")
 local EpicMinigamesButton = Instance.new("TextButton")
+local BreakingPointButton = Instance.new("TextButton")
+local FunkyFridayButton = Instance.new("TextButton")
+local DaHoodButton = Instance.new("TextButton")
+local SoldierSimulatorButton = Instance.new("TextButton")
+local VehicleSimulatorButton = Instance.new("TextButton")
 local ScriptScrollingFrame = Instance.new("ScrollingFrame")
-local BypassChatButton = Instance.new("TextButton")
+local infyButton = Instance.new("TextButton")
+local SnowHubButton = Instance.new("TextButton")
+local SniffHubButton = Instance.new("TextButton")
+local OPFinalityButton = Instance.new("TextButton")
+local MonkeyHubButton = Instance.new("TextButton")
+local MiztHubButton = Instance.new("TextButton")
+local HatHubButton = Instance.new("TextButton")
+local FantomHubButton = Instance.new("TextButton")
+local DarkhubButton = Instance.new("TextButton")
 local CitrusGuiButton = Instance.new("TextButton")
 local CMDXButton = Instance.new("TextButton")
-local DarkhubButton = Instance.new("TextButton")
-local MiztHubButton = Instance.new("TextButton")
-local infyButton = Instance.new("TextButton")
-local FantomHubButton = Instance.new("TextButton")
-local HatHubButton = Instance.new("TextButton")
-local MonkeyHubButton = Instance.new("TextButton")
-local OPFinalityButton = Instance.new("TextButton")
-local SniffHubButton = Instance.new("TextButton")
-local SnowHubButton = Instance.new("TextButton")
+local BypassChatButton = Instance.new("TextButton")
+local AdvancedHubButton = Instance.new("TextButton")
+local FakeIpGrabberButton = Instance.new("TextButton")
+local FreeHeadlessButton = Instance.new("TextButton")
 local CreditFrame = Instance.new("Frame")
 local TextLabel_3 = Instance.new("TextLabel")
 local TextLabel_4 = Instance.new("TextLabel")
@@ -38,6 +45,8 @@ local TabFrame = Instance.new("ImageLabel")
 local CreditTextButton = Instance.new("TextButton")
 local GameTextButton = Instance.new("TextButton")
 local ScriptTextButton = Instance.new("TextButton")
+local OCFrame = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
 
 --Properties:
 
@@ -47,9 +56,10 @@ RimFrame.Name = "RimFrame"
 RimFrame.Parent = ScreenGui
 RimFrame.Active = true
 RimFrame.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
-RimFrame.Position = UDim2.new(0.10425362, 0, 0.159392789, 0)
+RimFrame.Position = UDim2.new(0.150125176, 0, 0.0872865245, 0)
 RimFrame.Selectable = true
 RimFrame.Size = UDim2.new(0, 562, 0, 435)
+RimFrame.Visible = true
 RimFrame.Draggable = true
 RimFrame.Active = true
 
@@ -106,7 +116,7 @@ TextLabel_2.BackgroundTransparency = 0.900
 TextLabel_2.Position = UDim2.new(0.52549082, 0, 0, 0)
 TextLabel_2.Size = UDim2.new(0, 189, 0, 41)
 TextLabel_2.Font = Enum.Font.SourceSans
-TextLabel_2.Text = "v1.0.1"
+TextLabel_2.Text = "v1.1.1"
 TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_2.TextScaled = true
 TextLabel_2.TextSize = 14.000
@@ -126,22 +136,6 @@ GameScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 GameScrollingFrame.BackgroundTransparency = 1.000
 GameScrollingFrame.Size = UDim2.new(0, 548, 0, 261)
 GameScrollingFrame.Visible = false
-
-BreakingPointButton.Name = "BreakingPointButton"
-BreakingPointButton.Parent = GameScrollingFrame
-BreakingPointButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-BreakingPointButton.BackgroundTransparency = 0.550
-BreakingPointButton.Position = UDim2.new(0.0130094737, 0, 0.0142857144, 0)
-BreakingPointButton.Size = UDim2.new(0, 122, 0, 34)
-BreakingPointButton.Font = Enum.Font.SourceSans
-BreakingPointButton.Text = "BreakingPoint"
-BreakingPointButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-BreakingPointButton.TextScaled = true
-BreakingPointButton.TextSize = 14.000
-BreakingPointButton.TextWrapped = true
-BreakingPointButton.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet(('https://pastebin.com/eqd89VL6'),true))()
-end)
 
 BSSButton.Name = "BSSButton"
 BSSButton.Parent = GameScrollingFrame
@@ -163,7 +157,7 @@ MM2Button.Name = "MM2Button"
 MM2Button.Parent = GameScrollingFrame
 MM2Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 MM2Button.BackgroundTransparency = 0.550
-MM2Button.Position = UDim2.new(0.48332718, 0, 0.0122448979, 0)
+MM2Button.Position = UDim2.new(0.481502354, 0, 0.0122448979, 0)
 MM2Button.Size = UDim2.new(0, 122, 0, 34)
 MM2Button.Font = Enum.Font.SourceSans
 MM2Button.Text = "Murder Mystery 2"
@@ -203,7 +197,7 @@ StrongmanSimulatorButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 StrongmanSimulatorButton.TextSize = 15.000
 StrongmanSimulatorButton.TextWrapped = true
 StrongmanSimulatorButton.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://pastebin.com/0UaUJvW9", true))()
+	loadstring(game:HttpGet("https://pastebin.com/0UaUJvW9",true))()
 end)
 
 PrisonLifeButton.Name = "PrisonLifeButton"
@@ -219,7 +213,7 @@ PrisonLifeButton.TextScaled = true
 PrisonLifeButton.TextSize = 14.000
 PrisonLifeButton.TextWrapped = true
 PrisonLifeButton.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet('https://pastebin.com/raw/CNGWYFz0'))()
+	loadstring(game:HttpGet('https://pastebin.com/raw/CNGWYFz0',true))()
 end)
 
 EpicMinigamesButton.Name = "EpicMinigamesButton"
@@ -235,7 +229,88 @@ EpicMinigamesButton.TextScaled = true
 EpicMinigamesButton.TextSize = 14.000
 EpicMinigamesButton.TextWrapped = true
 EpicMinigamesButton.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/SlamminPig/rblxgames/main/Epic%20Minigames/EpicMinigamesGUI"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/SlamminPig/rblxgames/main/Epic%20Minigames/EpicMinigamesGUI",true))()
+end)
+
+BreakingPointButton.Name = "BreakingPointButton"
+BreakingPointButton.Parent = GameScrollingFrame
+BreakingPointButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BreakingPointButton.BackgroundTransparency = 0.550
+BreakingPointButton.Position = UDim2.new(0.0130094737, 0, 0.0142857144, 0)
+BreakingPointButton.Size = UDim2.new(0, 122, 0, 34)
+BreakingPointButton.Font = Enum.Font.SourceSans
+BreakingPointButton.Text = "BreakingPoint"
+BreakingPointButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+BreakingPointButton.TextScaled = true
+BreakingPointButton.TextSize = 14.000
+BreakingPointButton.TextWrapped = true
+BreakingPointButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://pastebin.com/eqd89VL6'),true))()
+end)
+
+FunkyFridayButton.Name = "FunkyFridayButton"
+FunkyFridayButton.Parent = GameScrollingFrame
+FunkyFridayButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FunkyFridayButton.BackgroundTransparency = 0.550
+FunkyFridayButton.Position = UDim2.new(0.72420311, 0, 0.0927046835, 0)
+FunkyFridayButton.Size = UDim2.new(0, 122, 0, 34)
+FunkyFridayButton.Font = Enum.Font.SourceSans
+FunkyFridayButton.Text = "Funky Friday"
+FunkyFridayButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+FunkyFridayButton.TextScaled = true
+FunkyFridayButton.TextSize = 14.000
+FunkyFridayButton.TextWrapped = true
+FunkyFridayButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
+end)
+
+DaHoodButton.Name = "DaHoodButton"
+DaHoodButton.Parent = GameScrollingFrame
+DaHoodButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DaHoodButton.BackgroundTransparency = 0.550
+DaHoodButton.Position = UDim2.new(0.0125243068, 0, 0.169333026, 0)
+DaHoodButton.Size = UDim2.new(0, 122, 0, 34)
+DaHoodButton.Font = Enum.Font.SourceSans
+DaHoodButton.Text = "Da Hood"
+DaHoodButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+DaHoodButton.TextScaled = true
+DaHoodButton.TextSize = 14.000
+DaHoodButton.TextWrapped = true
+DaHoodButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002",true))()
+end)
+
+
+SoldierSimulatorButton.Name = "SoldierSimulatorButton"
+SoldierSimulatorButton.Parent = GameScrollingFrame
+SoldierSimulatorButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SoldierSimulatorButton.BackgroundTransparency = 0.550
+SoldierSimulatorButton.Position = UDim2.new(0.247925773, 0, 0.169333026, 0)
+SoldierSimulatorButton.Size = UDim2.new(0, 122, 0, 34)
+SoldierSimulatorButton.Font = Enum.Font.SourceSans
+SoldierSimulatorButton.Text = "Soldier Simulator"
+SoldierSimulatorButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+SoldierSimulatorButton.TextScaled = true
+SoldierSimulatorButton.TextSize = 14.000
+SoldierSimulatorButton.TextWrapped = true
+SoldierSimulatorButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/9df6pJVP",true))()
+end)
+
+VehicleSimulatorButton.Name = "VehicleSimulatorButton"
+VehicleSimulatorButton.Parent = GameScrollingFrame
+VehicleSimulatorButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VehicleSimulatorButton.BackgroundTransparency = 0.550
+VehicleSimulatorButton.Position = UDim2.new(0.481502414, 0, 0.169333026, 0)
+VehicleSimulatorButton.Size = UDim2.new(0, 122, 0, 34)
+VehicleSimulatorButton.Font = Enum.Font.SourceSans
+VehicleSimulatorButton.Text = "Vehicle Simulator"
+VehicleSimulatorButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+VehicleSimulatorButton.TextScaled = true
+VehicleSimulatorButton.TextSize = 14.000
+VehicleSimulatorButton.TextWrapped = true
+VehicleSimulatorButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/VehicleSimulator',true))()
 end)
 
 ScriptScrollingFrame.Name = "ScriptScrollingFrame"
@@ -246,20 +321,148 @@ ScriptScrollingFrame.BackgroundTransparency = 1.000
 ScriptScrollingFrame.Size = UDim2.new(0, 548, 0, 261)
 ScriptScrollingFrame.Visible = false
 
-BypassChatButton.Name = "BypassChatButton"
-BypassChatButton.Parent = ScriptScrollingFrame
-BypassChatButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-BypassChatButton.BackgroundTransparency = 0.550
-BypassChatButton.Position = UDim2.new(0.0130094737, 0, 0.0142857144, 0)
-BypassChatButton.Size = UDim2.new(0, 122, 0, 34)
-BypassChatButton.Font = Enum.Font.SourceSans
-BypassChatButton.Text = "BypassChat"
-BypassChatButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-BypassChatButton.TextScaled = true
-BypassChatButton.TextSize = 14.000
-BypassChatButton.TextWrapped = true
-BypassChatButton.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://the-shed.xyz/roblox/scripts/ChatBypass", true))()
+infyButton.Name = "infyButton"
+infyButton.Parent = ScriptScrollingFrame
+infyButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+infyButton.BackgroundTransparency = 0.550
+infyButton.Position = UDim2.new(0.48332718, 0, 0.0920869485, 0)
+infyButton.Size = UDim2.new(0, 122, 0, 34)
+infyButton.Font = Enum.Font.SourceSans
+infyButton.Text = "Infinite Yield"
+infyButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+infyButton.TextScaled = true
+infyButton.TextSize = 14.000
+infyButton.TextWrapped = true
+infyButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+SnowHubButton.Name = "SnowHubButton"
+SnowHubButton.Parent = ScriptScrollingFrame
+SnowHubButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SnowHubButton.BackgroundTransparency = 0.550
+SnowHubButton.Position = UDim2.new(0.716903806, 0, 0.169637978, 0)
+SnowHubButton.Size = UDim2.new(0, 122, 0, 34)
+SnowHubButton.Font = Enum.Font.SourceSans
+SnowHubButton.Text = "SnowHub"
+SnowHubButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+SnowHubButton.TextScaled = true
+SnowHubButton.TextSize = 14.000
+SnowHubButton.TextWrapped = true
+SnowHubButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://snowhub.dev/script.lua", true))()
+end)
+
+SniffHubButton.Name = "SniffHubButton"
+SniffHubButton.Parent = ScriptScrollingFrame
+SniffHubButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SniffHubButton.BackgroundTransparency = 0.550
+SniffHubButton.Position = UDim2.new(0.48332718, 0, 0.169637978, 0)
+SniffHubButton.Size = UDim2.new(0, 122, 0, 34)
+SniffHubButton.Font = Enum.Font.SourceSans
+SniffHubButton.Text = "SniffHub"
+SniffHubButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+SniffHubButton.TextScaled = true
+SniffHubButton.TextSize = 14.000
+SniffHubButton.TextWrapped = true
+SniffHubButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/2dgeneralspam1/Sniff-Hub/main/Sniff%20Hub'))()
+end)
+
+OPFinalityButton.Name = "OPFinalityButton"
+OPFinalityButton.Parent = ScriptScrollingFrame
+OPFinalityButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OPFinalityButton.BackgroundTransparency = 0.550
+OPFinalityButton.Position = UDim2.new(0.248001859, 0, 0.169637978, 0)
+OPFinalityButton.Size = UDim2.new(0, 122, 0, 34)
+OPFinalityButton.Font = Enum.Font.SourceSans
+OPFinalityButton.Text = "OPFinality"
+OPFinalityButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+OPFinalityButton.TextScaled = true
+OPFinalityButton.TextSize = 14.000
+OPFinalityButton.TextWrapped = true
+OPFinalityButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/dqE9ZmcV"))()
+end)
+
+MonkeyHubButton.Name = "MonkeyHubButton"
+MonkeyHubButton.Parent = ScriptScrollingFrame
+MonkeyHubButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MonkeyHubButton.BackgroundTransparency = 0.550
+MonkeyHubButton.Position = UDim2.new(0.0130094737, 0, 0.169637978, 0)
+MonkeyHubButton.Size = UDim2.new(0, 122, 0, 34)
+MonkeyHubButton.Font = Enum.Font.SourceSans
+MonkeyHubButton.Text = "Monkey Hub"
+MonkeyHubButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+MonkeyHubButton.TextScaled = true
+MonkeyHubButton.TextSize = 14.000
+MonkeyHubButton.TextWrapped = true
+MonkeyHubButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/MonkeHub/main/Loader.lua"))()
+end)
+
+MiztHubButton.Name = "MiztHubButton"
+MiztHubButton.Parent = ScriptScrollingFrame
+MiztHubButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MiztHubButton.BackgroundTransparency = 0.550
+MiztHubButton.Position = UDim2.new(0.716903806, 0, 0.0920869485, 0)
+MiztHubButton.Size = UDim2.new(0, 122, 0, 34)
+MiztHubButton.Font = Enum.Font.SourceSans
+MiztHubButton.Text = "MiztHub"
+MiztHubButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+MiztHubButton.TextScaled = true
+MiztHubButton.TextSize = 14.000
+MiztHubButton.TextWrapped = true
+MiztHubButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/UbqBq7mC", true))()
+end)
+
+HatHubButton.Name = "HatHubButton"
+HatHubButton.Parent = ScriptScrollingFrame
+HatHubButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HatHubButton.BackgroundTransparency = 0.550
+HatHubButton.Position = UDim2.new(0.248001859, 0, 0.0920869485, 0)
+HatHubButton.Size = UDim2.new(0, 122, 0, 34)
+HatHubButton.Font = Enum.Font.SourceSans
+HatHubButton.Text = "HatHub"
+HatHubButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+HatHubButton.TextScaled = true
+HatHubButton.TextSize = 14.000
+HatHubButton.TextWrapped = true
+HatHubButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/Bax8vW7z",true))()
+end)
+
+FantomHubButton.Name = "FantomHubButton"
+FantomHubButton.Parent = ScriptScrollingFrame
+FantomHubButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FantomHubButton.BackgroundTransparency = 0.550
+FantomHubButton.Position = UDim2.new(0.0130094737, 0, 0.0920869485, 0)
+FantomHubButton.Size = UDim2.new(0, 122, 0, 34)
+FantomHubButton.Font = Enum.Font.SourceSans
+FantomHubButton.Text = "FantomHub"
+FantomHubButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+FantomHubButton.TextScaled = true
+FantomHubButton.TextSize = 14.000
+FantomHubButton.TextWrapped = true
+FantomHubButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/UmhaEvTT",true))()
+end)
+
+DarkhubButton.Name = "DarkhubButton"
+DarkhubButton.Parent = ScriptScrollingFrame
+DarkhubButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DarkhubButton.BackgroundTransparency = 0.550
+DarkhubButton.Position = UDim2.new(0.716903806, 0, 0.012244897, 0)
+DarkhubButton.Size = UDim2.new(0, 122, 0, 34)
+DarkhubButton.Font = Enum.Font.SourceSans
+DarkhubButton.Text = "Darkhub"
+DarkhubButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+DarkhubButton.TextScaled = true
+DarkhubButton.TextSize = 14.000
+DarkhubButton.TextWrapped = true
+DarkhubButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
 end)
 
 CitrusGuiButton.Name = "CitrusGuiButton"
@@ -294,149 +497,71 @@ CMDXButton.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/HFkyyd1H",true))()
 end)
 
-DarkhubButton.Name = "DarkhubButton"
-DarkhubButton.Parent = ScriptScrollingFrame
-DarkhubButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-DarkhubButton.BackgroundTransparency = 0.550
-DarkhubButton.Position = UDim2.new(0.716903806, 0, 0.012244897, 0)
-DarkhubButton.Size = UDim2.new(0, 122, 0, 34)
-DarkhubButton.Font = Enum.Font.SourceSans
-DarkhubButton.Text = "Darkhub"
-DarkhubButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-DarkhubButton.TextScaled = true
-DarkhubButton.TextSize = 14.000
-DarkhubButton.TextWrapped = true
-DarkhubButton.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
+BypassChatButton.Name = "BypassChatButton"
+BypassChatButton.Parent = ScriptScrollingFrame
+BypassChatButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BypassChatButton.BackgroundTransparency = 0.550
+BypassChatButton.Position = UDim2.new(0.0130094737, 0, 0.0142857144, 0)
+BypassChatButton.Size = UDim2.new(0, 122, 0, 34)
+BypassChatButton.Font = Enum.Font.SourceSans
+BypassChatButton.Text = "BypassChat"
+BypassChatButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+BypassChatButton.TextScaled = true
+BypassChatButton.TextSize = 14.000
+BypassChatButton.TextWrapped = true
+BypassChatButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://the-shed.xyz/roblox/scripts/ChatBypass", true))()
 end)
 
-MiztHubButton.Name = "MiztHubButton"
-MiztHubButton.Parent = ScriptScrollingFrame
-MiztHubButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-MiztHubButton.BackgroundTransparency = 0.550
-MiztHubButton.Position = UDim2.new(0.716903806, 0, 0.0920869485, 0)
-MiztHubButton.Size = UDim2.new(0, 122, 0, 34)
-MiztHubButton.Font = Enum.Font.SourceSans
-MiztHubButton.Text = "MiztHub"
-MiztHubButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-MiztHubButton.TextScaled = true
-MiztHubButton.TextSize = 14.000
-MiztHubButton.TextWrapped = true
-MiztHubButton.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://pastebin.com/UbqBq7mC", true))()
+AdvancedHubButton.Name = "AdvancedHubButton"
+AdvancedHubButton.Parent = ScriptScrollingFrame
+AdvancedHubButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AdvancedHubButton.BackgroundTransparency = 0.550
+AdvancedHubButton.Position = UDim2.new(0.0125242472, 0, 0.248182029, 0)
+AdvancedHubButton.Size = UDim2.new(0, 122, 0, 34)
+AdvancedHubButton.Font = Enum.Font.SourceSans
+AdvancedHubButton.Text = "AdvancedHub"
+AdvancedHubButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+AdvancedHubButton.TextScaled = true
+AdvancedHubButton.TextSize = 14.000
+AdvancedHubButton.TextWrapped = true
+AdvancedHubButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/AminIsWinnerA/AdvancedHub/main/TowerOfHell", true))()
 end)
 
-infyButton.Name = "infyButton"
-infyButton.Parent = ScriptScrollingFrame
-infyButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-infyButton.BackgroundTransparency = 0.550
-infyButton.Position = UDim2.new(0.48332718, 0, 0.0920869485, 0)
-infyButton.Size = UDim2.new(0, 122, 0, 34)
-infyButton.Font = Enum.Font.SourceSans
-infyButton.Text = "Infinite Yield"
-infyButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-infyButton.TextScaled = true
-infyButton.TextSize = 14.000
-infyButton.TextWrapped = true
-infyButton.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+FakeIpGrabberButton.Name = "FakeIpGrabberButton"
+FakeIpGrabberButton.Parent = ScriptScrollingFrame
+FakeIpGrabberButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FakeIpGrabberButton.BackgroundTransparency = 0.550
+FakeIpGrabberButton.Position = UDim2.new(0.247925714, 0, 0.248182029, 0)
+FakeIpGrabberButton.Size = UDim2.new(0, 122, 0, 34)
+FakeIpGrabberButton.Font = Enum.Font.SourceSans
+FakeIpGrabberButton.Text = "Fake IP Grabber"
+FakeIpGrabberButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+FakeIpGrabberButton.TextScaled = true
+FakeIpGrabberButton.TextSize = 14.000
+FakeIpGrabberButton.TextWrapped = true
+FakeIpGrabberButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/V76GG6Er", true))()
 end)
 
-FantomHubButton.Name = "FantomHubButton"
-FantomHubButton.Parent = ScriptScrollingFrame
-FantomHubButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-FantomHubButton.BackgroundTransparency = 0.550
-FantomHubButton.Position = UDim2.new(0.0130094737, 0, 0.0920869485, 0)
-FantomHubButton.Size = UDim2.new(0, 122, 0, 34)
-FantomHubButton.Font = Enum.Font.SourceSans
-FantomHubButton.Text = "FantomHub"
-FantomHubButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-FantomHubButton.TextScaled = true
-FantomHubButton.TextSize = 14.000
-FantomHubButton.TextWrapped = true
-FantomHubButton.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://pastebin.com/raw/UmhaEvTT",true))()
+FreeHeadlessButton.Name = "FreeHeadlessButton"
+FreeHeadlessButton.Parent = ScriptScrollingFrame
+FreeHeadlessButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FreeHeadlessButton.BackgroundTransparency = 0.550
+FreeHeadlessButton.Position = UDim2.new(0.48332718, 0, 0.248182029, 0)
+FreeHeadlessButton.Size = UDim2.new(0, 122, 0, 34)
+FreeHeadlessButton.Font = Enum.Font.SourceSans
+FreeHeadlessButton.Text = "Free Headless"
+FreeHeadlessButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+FreeHeadlessButton.TextScaled = true
+FreeHeadlessButton.TextSize = 14.000
+FreeHeadlessButton.TextWrapped = true
+FreeHeadlessButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/LQsfuqRr", true))()
 end)
 
-HatHubButton.Name = "HatHubButton"
-HatHubButton.Parent = ScriptScrollingFrame
-HatHubButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-HatHubButton.BackgroundTransparency = 0.550
-HatHubButton.Position = UDim2.new(0.248001859, 0, 0.0920869485, 0)
-HatHubButton.Size = UDim2.new(0, 122, 0, 34)
-HatHubButton.Font = Enum.Font.SourceSans
-HatHubButton.Text = "HatHub"
-HatHubButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-HatHubButton.TextScaled = true
-HatHubButton.TextSize = 14.000
-HatHubButton.TextWrapped = true
-HatHubButton.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://pastebin.com/Bax8vW7z",true))()
-end)
 
-MonkeyHubButton.Name = "MonkeyHubButton"
-MonkeyHubButton.Parent = ScriptScrollingFrame
-MonkeyHubButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-MonkeyHubButton.BackgroundTransparency = 0.550
-MonkeyHubButton.Position = UDim2.new(0.0130094737, 0, 0.169637978, 0)
-MonkeyHubButton.Size = UDim2.new(0, 122, 0, 34)
-MonkeyHubButton.Font = Enum.Font.SourceSans
-MonkeyHubButton.Text = "Monkey Hub"
-MonkeyHubButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-MonkeyHubButton.TextScaled = true
-MonkeyHubButton.TextSize = 14.000
-MonkeyHubButton.TextWrapped = true
-MonkeyHubButton.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/MonkeHub/main/Loader.lua"))()
-end)
-
-OPFinalityButton.Name = "OPFinalityButton"
-OPFinalityButton.Parent = ScriptScrollingFrame
-OPFinalityButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-OPFinalityButton.BackgroundTransparency = 0.550
-OPFinalityButton.Position = UDim2.new(0.248001859, 0, 0.169637978, 0)
-OPFinalityButton.Size = UDim2.new(0, 122, 0, 34)
-OPFinalityButton.Font = Enum.Font.SourceSans
-OPFinalityButton.Text = "OPFinality"
-OPFinalityButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-OPFinalityButton.TextScaled = true
-OPFinalityButton.TextSize = 14.000
-OPFinalityButton.TextWrapped = true
-OPFinalityButton.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://pastebin.com/dqE9ZmcV"))()
-end)
-
-SniffHubButton.Name = "SniffHubButton"
-SniffHubButton.Parent = ScriptScrollingFrame
-SniffHubButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-SniffHubButton.BackgroundTransparency = 0.550
-SniffHubButton.Position = UDim2.new(0.48332718, 0, 0.169637978, 0)
-SniffHubButton.Size = UDim2.new(0, 122, 0, 34)
-SniffHubButton.Font = Enum.Font.SourceSans
-SniffHubButton.Text = "SniffHub"
-SniffHubButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-SniffHubButton.TextScaled = true
-SniffHubButton.TextSize = 14.000
-SniffHubButton.TextWrapped = true
-SniffHubButton.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/2dgeneralspam1/Sniff-Hub/main/Sniff%20Hub'))()
-end)
-
-SnowHubButton.Name = "SnowHubButton"
-SnowHubButton.Parent = ScriptScrollingFrame
-SnowHubButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-SnowHubButton.BackgroundTransparency = 0.550
-SnowHubButton.Position = UDim2.new(0.716903806, 0, 0.169637978, 0)
-SnowHubButton.Size = UDim2.new(0, 122, 0, 34)
-SnowHubButton.Font = Enum.Font.SourceSans
-SnowHubButton.Text = "SnowHub"
-SnowHubButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-SnowHubButton.TextScaled = true
-SnowHubButton.TextSize = 14.000
-SnowHubButton.TextWrapped = true
-SnowHubButton.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://snowhub.dev/script.lua", true))()
-end)
 
 CreditFrame.Name = "CreditFrame"
 CreditFrame.Parent = InvisFrame
@@ -523,9 +648,27 @@ ScriptTextButton.TextScaled = true
 ScriptTextButton.TextSize = 14.000
 ScriptTextButton.TextWrapped = true
 
+OCFrame.Name = "OCFrame"
+OCFrame.Parent = ScreenGui
+OCFrame.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+OCFrame.BorderSizePixel = 10
+OCFrame.Position = UDim2.new(0.0117955441, 0, 0.667931676, 0)
+OCFrame.Size = UDim2.new(0, 106, 0, 38)
+
+TextButton.Parent = OCFrame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.Position = UDim2.new(-0.0849056616, 0, -0.210526228, 0)
+TextButton.Size = UDim2.new(0, 124, 0, 54)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Open"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 40.000
+TextButton.TextWrapped = true
+
 -- Scripts:
 
-local function GILYDIT_fake_script() -- CreditTextButton.creditopen 
+local function ADQTF_fake_script() -- CreditTextButton.creditopen 
 	local script = Instance.new('LocalScript', CreditTextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -535,8 +678,8 @@ local function GILYDIT_fake_script() -- CreditTextButton.creditopen
 	end)
 	
 end
-coroutine.wrap(GILYDIT_fake_script)()
-local function AZULV_fake_script() -- GameTextButton.gameopen 
+coroutine.wrap(ADQTF_fake_script)()
+local function TAFA_fake_script() -- GameTextButton.gameopen 
 	local script = Instance.new('LocalScript', GameTextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -546,8 +689,8 @@ local function AZULV_fake_script() -- GameTextButton.gameopen
 	end)
 	
 end
-coroutine.wrap(AZULV_fake_script)()
-local function YFNCYGZ_fake_script() -- ScriptTextButton.scriptopen 
+coroutine.wrap(TAFA_fake_script)()
+local function QBTSE_fake_script() -- ScriptTextButton.scriptopen 
 	local script = Instance.new('LocalScript', ScriptTextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -557,4 +700,18 @@ local function YFNCYGZ_fake_script() -- ScriptTextButton.scriptopen
 	end)
 	
 end
-coroutine.wrap(YFNCYGZ_fake_script)()
+coroutine.wrap(QBTSE_fake_script)()
+local function GPTJKE_fake_script() -- TextButton.Put in your textbutton 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.Parent.RimFrame.Visible == false then
+		script.Parent.Text = "Close"
+			script.Parent.Parent.Parent.RimFrame.Visible = true --Your button needs to be inside a frame
+		else
+			script.Parent.Parent.Parent.RimFrame.Visible = false
+			script.Parent.Text = "Open"
+		end
+	end)
+end
+coroutine.wrap(GPTJKE_fake_script)()
