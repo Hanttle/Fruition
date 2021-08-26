@@ -59,7 +59,7 @@ RimFrame.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
 RimFrame.Position = UDim2.new(0.150125176, 0, 0.0872865245, 0)
 RimFrame.Selectable = true
 RimFrame.Size = UDim2.new(0, 562, 0, 435)
-RimFrame.Visible = true
+RimFrame.Visible = false
 RimFrame.Draggable = true
 RimFrame.Active = true
 
@@ -116,7 +116,7 @@ TextLabel_2.BackgroundTransparency = 0.900
 TextLabel_2.Position = UDim2.new(0.52549082, 0, 0, 0)
 TextLabel_2.Size = UDim2.new(0, 189, 0, 41)
 TextLabel_2.Font = Enum.Font.SourceSans
-TextLabel_2.Text = "v1.1.1"
+TextLabel_2.Text = "v1.1.2"
 TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_2.TextScaled = true
 TextLabel_2.TextSize = 14.000
@@ -382,7 +382,7 @@ OPFinalityButton.TextScaled = true
 OPFinalityButton.TextSize = 14.000
 OPFinalityButton.TextWrapped = true
 OPFinalityButton.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://pastebin.com/dqE9ZmcV"))()
+	loadstring(Game:GetObjects("rbxassetid://1294358929")[1].Source)()
 end)
 
 MonkeyHubButton.Name = "MonkeyHubButton"
@@ -414,7 +414,7 @@ MiztHubButton.TextScaled = true
 MiztHubButton.TextSize = 14.000
 MiztHubButton.TextWrapped = true
 MiztHubButton.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://pastebin.com/UbqBq7mC", true))()
+	loadstring(game:HttpGet("https://pastebin.com/nin76ALL", true))()
 end)
 
 HatHubButton.Name = "HatHubButton"
@@ -478,7 +478,7 @@ CitrusGuiButton.TextScaled = true
 CitrusGuiButton.TextSize = 14.000
 CitrusGuiButton.TextWrapped = true
 CitrusGuiButton.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://pastebin.com/PZjp9d4C", true))()
+	loadstring(game:HttpGet("https://pastebin.com/2RqAyq6V", true))()
 end)
 
 CMDXButton.Name = "CMD-XButton"
@@ -494,7 +494,7 @@ CMDXButton.TextScaled = true
 CMDXButton.TextSize = 14.000
 CMDXButton.TextWrapped = true
 CMDXButton.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://pastebin.com/raw/HFkyyd1H",true))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
 end)
 
 BypassChatButton.Name = "BypassChatButton"
@@ -542,7 +542,7 @@ FakeIpGrabberButton.TextScaled = true
 FakeIpGrabberButton.TextSize = 14.000
 FakeIpGrabberButton.TextWrapped = true
 FakeIpGrabberButton.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://pastebin.com/V76GG6Er", true))()
+	loadstring(game:HttpGet("https://pastebin.com/raw/FHEkA5Rt", true))()
 end)
 
 FreeHeadlessButton.Name = "FreeHeadlessButton"
@@ -676,7 +676,7 @@ local function ADQTF_fake_script() -- CreditTextButton.creditopen
 		script.Parent.Parent.Parent.CreditFrame.Visible = true
 		script.Parent.Parent.Parent.ScriptScrollingFrame.Visible = false
 	end)
-	
+
 end
 coroutine.wrap(ADQTF_fake_script)()
 local function TAFA_fake_script() -- GameTextButton.gameopen 
@@ -687,7 +687,7 @@ local function TAFA_fake_script() -- GameTextButton.gameopen
 		script.Parent.Parent.Parent.CreditFrame.Visible = false
 		script.Parent.Parent.Parent.ScriptScrollingFrame.Visible = false
 	end)
-	
+
 end
 coroutine.wrap(TAFA_fake_script)()
 local function QBTSE_fake_script() -- ScriptTextButton.scriptopen 
@@ -698,7 +698,7 @@ local function QBTSE_fake_script() -- ScriptTextButton.scriptopen
 		script.Parent.Parent.Parent.CreditFrame.Visible = false
 		script.Parent.Parent.Parent.ScriptScrollingFrame.Visible = true
 	end)
-	
+
 end
 coroutine.wrap(QBTSE_fake_script)()
 local function GPTJKE_fake_script() -- TextButton.Put in your textbutton 
@@ -706,7 +706,7 @@ local function GPTJKE_fake_script() -- TextButton.Put in your textbutton
 
 	script.Parent.MouseButton1Click:Connect(function()
 		if script.Parent.Parent.Parent.RimFrame.Visible == false then
-		script.Parent.Text = "Close"
+			script.Parent.Text = "Close"
 			script.Parent.Parent.Parent.RimFrame.Visible = true --Your button needs to be inside a frame
 		else
 			script.Parent.Parent.Parent.RimFrame.Visible = false
